@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de Comida</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="pedido.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" id="nav">
+        <a class="navbar-brand" href="Home.html"><img src="img/logo.jpg" width="100" height="50"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Menu.html">Menu <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conocenos.html">Conócenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pedido.html">Realiza tu pedido</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container mt-5">
+  <h1 class="mb-4">Realiza tu pedido</h1>
+  <form id="pedidoForm">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+    </div>
+    <div class="form-group">
+      <label for="sopas">Sopas:</label>
+      <select class="form-control" id="sopas">
+        <option value="Locro de gallina">Locro de gallina</option>
+        <option value="Sopa de mani">Sopa de mani</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="segundos">Segundos:</label>
+      <select class="form-control" id="segundos">
+        <option value="Majadito">Majadito</option>
+        <option value="Pique Macho">Pique Macho</option>
+        <option value="Silpancho">Silpancho</option>
+        <option value="Chicharron de pollo">Chicharron de pollo</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Gaseosas:</label><br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gaseosa1" value="Coca-Cola">
+        <label class="form-check-label" for="gaseosa1">Coca-Cola</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gaseosa2" value="Fanta">
+        <label class="form-check-label" for="gaseosa2">Fanta</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gaseosa3" value="Sprite">
+        <label class="form-check-label" for="gaseosa3">Sprite</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gaseosa4" value="Limonada">
+        <label class="form-check-label" for="gaseosa4">Limonada</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gaseosa5" value="Maracuya">
+        <label class="form-check-label" for="gaseosa5">MAracuya</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gaseosa6" value="Frutilla">
+        <label class="form-check-label" for="gaseosa6">Frutilla</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+  </form>
+
+  <div id="tablaPedidos" class="mt-5">
+    <h2>Pedidos Registrados</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Sopa</th>
+          <th>Segundo</th>
+          <th>Gaseosas</th>
+          <th>Editar</th>
+        </tr>
+      </thead>
+      <tbody id="pedidosBody">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="pedido.js"></script>
+</body>
+</html>

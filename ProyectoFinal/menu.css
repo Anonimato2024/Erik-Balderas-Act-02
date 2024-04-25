@@ -1,0 +1,67 @@
+/* Estilos personalizados */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Color de texto principal */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo del encabezado con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.display-4 {
+    color: #343a40; /* Color oscuro para el título */
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo de las tarjetas con transparencia */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 400px; /* Altura fija para todas las tarjetas */
+    overflow: hidden; /* Oculta el contenido que exceda la altura */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px; /* Tamaño fijo para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #343a40;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.footer {
+    background-color: rgba(52, 58, 64, 0.8); /* Fondo del footer con transparencia */
+    color: #fff; /* Texto blanco en el footer */
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+}

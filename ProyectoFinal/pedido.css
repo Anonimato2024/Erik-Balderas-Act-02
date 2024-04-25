@@ -1,0 +1,16 @@
+/* Estilos para el formulario de pedido */
+
+body {
+    background-image: url('img/Binevenido.jpg'); /* ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto asegura que la imagen de fondo no se desplace con el contenido */
+    color: #fff; /* Color de texto blanco para contrastar con el fondo */
+}
+
+.container {
+    background-color: rgba(162, 177, 151, 0.5); /* Fondo semi-transparente para el contenido */
+    padding: 20px;
+    border-radius: 10px;
+}

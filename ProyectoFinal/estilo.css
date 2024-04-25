@@ -1,0 +1,12 @@
+#welcome-image {
+    background-image: url('img/Binevenido.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: lightgreen; /* Color de fondo */
+    height: 400px; /* Altura de la imagen */
+    width: 100%; /* Ancho al 100% */
+    padding: 20px; /* Espaciado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
